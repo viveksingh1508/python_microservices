@@ -18,11 +18,11 @@ spec:
     spec: 
       containers:
         - name: converter
-          image: vivek1508/consumer:1.0
+          image: vivek1508/converter:1.0
           envFrom:
             - configMapRef:
                 name: converter-configmap
             - secretRef:
-                name: ls
+                name: converter-secret
                 
 
